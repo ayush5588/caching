@@ -4,6 +4,6 @@ const router = express.Router();
 const check_cache = require('../redis/check_cache');
 const controller = require('./controller');
 
-router.get('/:id',check_cache,controller.starship);
+router.get('/:id',check_cache,controller.todo);
 
 module.exports = router;
